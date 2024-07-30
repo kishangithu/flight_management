@@ -1,0 +1,98 @@
+Project Overview
+The Flight Status project is designed to provide real-time updates on flight statuses and manage notifications. The project includes a frontend web application, a backend API, a notification system, and database management. The system enables users to view flight information, receive notifications, and administrators to manage flight data and notification settings.
+
+Frontend Documentation
+Technologies Used
+HTML: Markup language for structuring the frontend.
+CSS: Styling language for visual presentation.
+React.js: JavaScript library for building user interfaces.
+Axios: HTTP client for making API requests.
+Redux: State management library.
+
+Components
+App.js
+Purpose: The root component of the React application. Sets up routing and integrates Redux store.
+Key Features: Includes BrowserRouter for routing, Provider for Redux integration.
+
+FlightDetails.js
+Purpose: Displays detailed information about a specific flight.
+Key Features: Fetches flight details using getFlightById from api.js, displays flight status, and allows status updates.
+
+api.js
+Purpose: Manages API requests to the backend.
+Key Features: Provides functions for fetching all flights, retrieving flight details, updating flight statuses, and managing notifications.
+
+API Integration
+Fetching Flights: Uses getAllFlights() to retrieve a list of flights.
+Fetching Flight Details: Uses getFlightById(flightId) to get details of a specific flight.
+Updating Flight Status: Uses updateFlightStatus(flightId, statusUpdate) to update the status of a flight.
+
+Notification Settings: 
+Uses saveNotificationSettings(settings) and getNotificationSettings() for managing user preferences.
+State Management
+Redux: Manages application state, including flight data and user settings.
+Reducers and Actions: Define how the state updates in response to actions.
+
+Styling
+CSS Modules: Scoped styling for components.
+Variables: Defined in variables.css to ensure consistent design across the application.
+
+Backend Documentation
+
+Technologies Used
+Flask: Web framework for building the RESTful API.
+Python: Programming language for backend development.
+SQLAlchemy: ORM for database interactions.
+Flask-Migrate: For handling database migrations.
+
+API Endpoints
+GET /api/flights: Retrieves a list of all flights.
+GET /api/flights/:id: Retrieves details of a specific flight.
+PUT /api/flights/:id/status: Updates the status of a flight.
+POST /api/notifications/settings: Saves user notification settings.
+GET /api/notifications/settings: Retrieves user notification settings.
+
+Database Integration
+
+MongoDB: Stores flight data and user settings.
+PostgreSQL: Provides relational data storage.
+Notification System
+Kafka: Optional messaging system for notifications.
+RabbitMQ: Optional messaging system for notifications.
+
+Notifications Documentation
+
+Technologies Used
+Kafka: Distributed event streaming platform.
+RabbitMQ: Message broker for queuing notifications.
+Firebase Cloud Messaging: For push notifications.
+
+Kafka Setup
+Producer: Sends messages to Kafka topics.
+Consumer: Receives and processes messages from Kafka topics.
+
+RabbitMQ Setup
+Producer: Sends messages to RabbitMQ queues.
+Consumer: Receives and processes messages from RabbitMQ queues.
+
+Database Documentation
+
+Technologies Used
+MongoDB: NoSQL database for flight data.
+PostgreSQL: Relational database for additional data storage.
+MongoDB Setup
+Initialization: Creates collections and indexes.
+Docker: Use the provided Dockerfile to build and run the MongoDB container.
+
+PostgreSQL Setup
+Initialization: Creates database schema and tables.
+Docker: Use the provided Dockerfile to build and run the PostgreSQL container.
+
+Fetching Flights
+Updating Flight Status
+Sending Notification
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+This documentation provides a comprehensive overview of each part of the project, including the frontend, backend, notification system, and database setup. Adjust any specifics as needed for your implementation
