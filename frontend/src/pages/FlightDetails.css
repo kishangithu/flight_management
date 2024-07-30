@@ -1,0 +1,33 @@
+.flight-details {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .flight-info {
+    margin-bottom: 20px;
+  }
+  
+  .flight-info p {
+    margin: 5px 0;
+  }
+  
+  .flight-status h3 {
+    margin-top: 20px;
+  }
+  
+  .flight-status ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .flight-status li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .loading, .error, .no-data {
+    text-align: center;
+    margin-top: 20px;
+  }
+  

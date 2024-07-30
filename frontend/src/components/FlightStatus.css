@@ -1,0 +1,24 @@
+.flight-status {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .flight-status h2 {
+    margin-bottom: 20px;
+  }
+  
+  .flight-status ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .flight-status li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .flight-status p {
+    margin: 5px 0;
+  }
+  
